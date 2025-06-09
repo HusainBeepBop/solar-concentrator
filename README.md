@@ -21,9 +21,9 @@ Next steps include:
 ## 🔍 Design Highlights
 
 - Parabolic curve based on the equation:  
-  \[
-  z = \frac{x^2}{4f}, \quad \text{with } f \approx 0.375\, \text{m}
-  \]
+  `z = x² / (4f),   with  f ≈ 0.375 m`
+  <br>
+  <sub><i>(LaTeX: \( z = \frac{x^2}{4f}, \quad \text{with } f \approx 0.375\, \text{m} \))</i></sub>
 - Created using **B-spline sketching**, revolved around central axis in FreeCAD
 - Geometry fixes included resolving:
   - Open wire profile errors
