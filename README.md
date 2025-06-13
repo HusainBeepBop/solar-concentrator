@@ -28,6 +28,32 @@ Next steps include:
   - Axis intersection during revolution
   - Sketch translation issues inside FreeCAD’s Sketcher
 
+## 📐 Parabolic Dish Profile Points
+
+Below are the key points for plotting the parabolic dish profile in FreeCAD, with all measurements in millimeters (mm).  
+These coordinates are intended for use in the Sketcher workbench on the XZ_Plane (`x` → X-axis, `z` → Z-axis).
+
+| X (mm) | Z (mm) |
+| :----- | :----- |
+| 0      | 0      |
+| 50     | 1.25   |
+| 100    | 5.0    |
+| 150    | 11.25  |
+| 200    | 20.0   |
+| 250    | 31.25  |
+| 300    | 45.0   |
+| 350    | 61.25  |
+| 400    | 80.0   |
+| 450    | 101.25 |
+| 500    | 125.0  |
+
+**How to use these points:**
+- **(0, 0):** The vertex (deepest point) at the center of the dish.
+- **(500, 125.0):** The rim of the dish, 500 mm (50 cm) from the center, with a depth of 125 mm (12.5 cm).
+- Plot these (X, Z) pairs in FreeCAD’s Sketcher using the B-spline tool to define the parabolic curve.
+
+*These points correspond to a dish with a 100 cm diameter and 12.5 cm depth. The grid units in FreeCAD (10 mm = 1 cm) match these values directly.*
+
 ## 🎯 Why This Project?
 
 Rural electrification still remains a challenge in many parts of the world. This project is an attempt to explore **clean, small-scale energy systems** that can be:
