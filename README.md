@@ -21,9 +21,7 @@ Next steps include:
 ## 🔍 Design Highlights
 
 - Parabolic curve based on the equation:  
-  `z = x² / (4f),   with  f ≈ 0.375 m`
-  <br>
-  <sub><i>(LaTeX: \( z = \frac{x^2}{4f}, \quad \text{with } f \approx 0.375\, \text{m} \))</i></sub>
+ `y = 0.005x^2,   with  f = 0.5 m`
 - Created using **B-spline sketching**, revolved around central axis in FreeCAD
 - Geometry fixes included resolving:
   - Open wire profile errors
@@ -47,13 +45,16 @@ Rural electrification still remains a challenge in many parts of the world. This
 
 ## 📸 Preview
 
+![Parabola Dish Slice Graph Plot](./document/parabola%20slice.png)
+*A screenshot of the graph for plotting the curve of the parabola.*
+
 ![Parabolic Dish Render](./document/Screenshot%202025-06-09%20171413.png)  
 *A render of the completed 3D parabolic reflector model.*
 
 ## 📌 Roadmap
 
 - [x] Design and model parabolic reflector
-- [ ] Add receiver coil at focal point
+- [ ] (Fixing potential issues and reiterating)
 - [ ] Build physical prototype using reflective surface
 - [ ] Boil water and measure steam output
 - [ ] Develop pressure control + safety system
