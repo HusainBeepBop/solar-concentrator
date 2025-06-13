@@ -92,6 +92,7 @@ Rural electrification remains a challenge in many parts of the world. This proje
 ![Parabolic Dish Render](./document/parabolic%20mirror.png)  
 *A render of the completed 3D parabolic reflector model.*
 
+
 ## 📌 Roadmap
 
 - [x] Design and model parabolic reflector
