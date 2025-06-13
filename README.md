@@ -95,7 +95,8 @@ Rural electrification remains a challenge in many parts of the world. This proje
 ## 📌 Roadmap
 
 - [x] Design and model parabolic reflector
-- [ ] (Fixing potential issues and reiterating)
+- [X] (Fixing potential issues and reiterating)
+- [ ] Proper rendering and simulation and data retrival
 - [ ] Build physical prototype using reflective surface
 - [ ] Boil water and measure steam output
 - [ ] Develop pressure control + safety system
