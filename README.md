@@ -1,17 +1,15 @@
 # 🌞 Solar-Powered Steam Generator for Rural Electricity
 
-This project aims to develop a **low-cost, solar-powered steam generator** that can be used to produce electricity in **rural or off-grid areas**. The system works by focusing sunlight using a **parabolic reflector** to heat water into **pressurized steam**, which can later be used to drive a small turbine or power generator.
+This open-source project explores how to generate electricity in rural or off-grid areas using a **solar-powered steam generator**. The system focuses sunlight with a **parabolic reflector** to heat water into pressurized steam, which can drive a small turbine or generator.
 
-## 🛠️ Project Status
+## ✨ Project Overview
 
-**✅ Parabolic Dish Modeling (Completed)**  
-The first milestone — creating an accurate 3D model of the **parabolic concentrator dish** — is complete. The model was created in **FreeCAD**, and the `.FCStd` file is included in this repository.
+Originally, I designed the solar concentrator in FreeCAD, but the first version had a filled center due to incorrect sketch geometry. To improve accuracy, I redesigned the parabola from scratch using the equation `y = 0.005x²`, with a focal length of `0.5 m`.
 
-Next steps include:
-- Designing the **receiver coil** to be placed at the focus point
-- Simulating heat transfer and steam generation
-- Prototyping with real-world materials
-- Integrating **automation (ESP32)** and pressure regulation
+- **B-spline sketching** was used for smoother control of the curve.
+- All constraints were carefully applied to fix under-constrained geometry.
+- The new revolve operation now generates a **hollow parabolic dish**, ideal for focusing sunlight into a small receiver area.
+- This update improves both the **visual realism** and **functional efficiency** for steam generation.
 
 ## 📁 Files Included
 
@@ -20,8 +18,10 @@ Next steps include:
 
 ## 🔍 Design Highlights
 
-- Parabolic curve based on the equation:  
- `y = 0.005x^2,   with  f = 0.5 m`
+- Parabolic curve based on the equation:
+  ```
+  z = x² / (4f),   with  f = 0.5 m
+  ```
 - Created using **B-spline sketching**, revolved around central axis in FreeCAD
 - Geometry fixes included resolving:
   - Open wire profile errors
@@ -54,9 +54,15 @@ These coordinates are intended for use in the Sketcher workbench on the XZ_Plane
 
 *These points correspond to a dish with a 100 cm diameter and 12.5 cm depth. The grid units in FreeCAD (10 mm = 1 cm) match these values directly.*
 
+## 🚀 Next Steps
+
+- Model the **receiver coil** to be placed at the focus point
+- Build a **pressure system** for safe steam generation
+- Explore **turbine integration** for electricity production
+
 ## 🎯 Why This Project?
 
-Rural electrification still remains a challenge in many parts of the world. This project is an attempt to explore **clean, small-scale energy systems** that can be:
+Rural electrification remains a challenge in many parts of the world. This project aims to demonstrate a **clean, small-scale energy system** that can be:
 - Built with **affordable materials**
 - Powered entirely by the **sun**
 - Repaired or scaled locally
@@ -74,7 +80,16 @@ Rural electrification still remains a challenge in many parts of the world. This
 ![Parabola Dish Slice Graph Plot](./document/parabola%20slice.png)
 *A screenshot of the graph for plotting the curve of the parabola.*
 
+![Parabola Dish Slice Point Plot](./document/plotting-points.png)
+*A screenshot of the plotting the points of the parabola.*
+
+![Parabola Dish Slice Point Plot](./document/bspline-after.png)
+*A screenshot of the bspline on the points of the parabola.*
+
 ![Parabolic Dish Render](./document/Screenshot%202025-06-09%20171413.png)  
+*A render of the completed 3D parabolic reflector model.*
+
+![Parabolic Dish Render](./document/parabolic%20mirror.png)  
 *A render of the completed 3D parabolic reflector model.*
 
 ## 📌 Roadmap
